@@ -61,11 +61,17 @@ vary depending on the country and the type of manufacturing plant.
 
 2\. MANUFACTURING VARIABLES COST
 
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/3075ad8e-b190-4130-ae98-ba7937def9b5)
+
+
 The variable cost includes the production line operators and cost of procuring raw materials for
 
 manufacturing of the product.
 
 3\. SEA FREIGHT SHIPPING COSTS ($/CONTAINER)
+
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/572b6620-3225-41fa-8a7c-6c232a438bc0)
+
 
 This table includes the cost of shipping the product from X to Y place in a container assuming 1
 
@@ -73,10 +79,14 @@ container contain 1000 containers.
 
 4\. MANUFACTURING SITE CAPACITY
 
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/d6a33895-c85d-44bf-8d51-551ee16e2dae)
+
+
 This table contains the capacity of each site to produce the units per month
 
 5\. CUSTOMER’S DEMAND PER MARKET
 
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/3c4f4939-9b0a-4797-87b6-80f856cf4e73)
 
 
 <a name="br3"></a> 
@@ -101,7 +111,11 @@ The model is solved using the PuLP solver and we have taken 3 different scenario
 
 **1. INITIAL SCENARIO**
 
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/ffa23d82-25f6-4417-92be-0a155b3f544c)
+
 Brazil plant is producing for the local market and the USA to meet its demand
+
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/8a46a887-90b7-494b-9df5-4da6aa30a74d)
 
 India plant produce for all countries except Brazil
 
@@ -109,7 +123,11 @@ India plant produce for all countries except Brazil
 
 <a name="br4"></a> 
 
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/bf3a0f96-7d65-49e5-a126-cf2bdd16b57c)
+
 Japan needs to produce locally because of the limited capacity of India
+
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/e127d38c-e468-4676-9ced-3c01fa820f79)
 
 Total cost to produce the goods
 
@@ -121,11 +139,17 @@ Let us try to double the size of the India High Capacity plant, assuming that it
 
 costs.
 
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/51c4bc83-7297-48c5-bc6f-b129984915a7)
+
 Brazil plant is still producing for the local market and the USA
+
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/2506a6cc-b3a5-4fe8-84c9-85a425045565)
 
 India plants produce for all countries except Brazil
 
 Japan does not produce locally anymore.
+
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/d5d36e9b-6a03-46cb-ac78-0f335dde3b5d)
 
 Final Costs
 
@@ -137,15 +161,25 @@ Final Costs
 
 What if we have container costs multiplied by 5?
 
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/b5834f62-488d-4732-bf2c-9cbde9cae914)
+
 Brazil is producing for the local market only
+
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/d81fa9a8-28ec-46c1-9f31-f8557012ee31)
 
 The USA started to produce for the local market, and Japan
 
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/a6dfe5ad-557f-41c8-9a8f-d5c435418ba1)
+
 India closed its low-capacity factory
+
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/e30c8fb6-d38d-4927-ad9c-9dfeeebba3df)
 
 Japan starts to produce for its local market
 
 Because of their limited production capacity, Japan and the USA still rely on the Indian plant.
+
+![image](https://github.com/prabhneetS/SupplyChainSolver/assets/163606021/209732d9-0a80-4533-8ce7-b59aff5dccee)
 
 Final Costs
 
