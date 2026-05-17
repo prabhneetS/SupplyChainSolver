@@ -227,6 +227,50 @@ Run the script in a Python environment.
 
 Analyze the results to make informed decisions about your supply chain network optimization.
 
+· **REAL-TIME OPTIMIZATION DASHBOARD:**
+
+The Supply Chain Optimization Dashboard (Dashboard.html) is an interactive web-based visualization tool that provides real-time insights into your supply chain optimization results.
+
+**Features:**
+
+- **Key Performance Indicators (KPIs)**: Monitor critical metrics at a glance:
+  - Optimization Status: PuLP solver result status
+  - Total Monthly Cost: Objective function value
+  - Total Demand: Aggregated units/month across all markets
+  - Open Plants: Number of active manufacturing facilities
+  - Average Utilization: Capacity usage percentage across selected plants
+  - Variable + Freight Costs: Production and shipping cost breakdown
+
+- **Interactive Visualizations**:
+  - Demand by Market: Bar chart showing market-specific demand distribution
+  - Cost Split Analysis: Breakdown of fixed costs, variable costs, and freight charges
+  - Production Flow Network: Sankey diagram visualizing material flow from plants to markets
+  - Shipment Routes: Geographic and cost analysis of shipping routes
+
+- **Dynamic Filter**: Plant-location filter to analyze specific manufacturing site performance
+
+- **Data Tables**: Detailed tables showing:
+  - Production quantities by plant and market
+  - Shipping costs and volumes
+  - Utilization metrics per facility
+
+- **Automated Insights**: AI-generated recommendations based on optimization results
+
+**How to Access the Dashboard:**
+
+1. Run the Jupyter notebook (supply_chain_solver_code.ipynb) to generate optimization results
+2. The Dashboard.html file uses the generated data to populate visualizations
+3. Open Dashboard.html in a web browser (recommended: run with a local HTTP server)
+4. Use the filter dropdowns to explore different scenarios and plant configurations
+
+**Getting Started with the Dashboard:**
+
+To serve the dashboard locally:
+```
+python -m http.server 8000
+```
+Then navigate to: http://localhost:8000/Dashboard.html
+
 · **NOTE:**
 
 This model provides a foundational framework that can be customized and extended to suit
